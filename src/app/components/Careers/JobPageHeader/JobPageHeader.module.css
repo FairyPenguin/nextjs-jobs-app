@@ -1,0 +1,156 @@
+.hero {
+  /* background-color: antiquewhite; */
+  background-image: url(../../../../../public/hero.jpg);
+  /* object-fit: cover; */
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.img_overlay {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0; */
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  background-color: #191b22;
+  opacity: 0.7;
+}
+
+/* .jobs_list_wrapper {
+      max-width: 1024px;
+      margin: 0 auto;
+    } */
+
+.hero_headings {
+  position: relative;
+  padding-top: 5rem;
+  color: white;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* width: 56%; */
+  /* margin: 0 auto; */
+  text-align: center;
+  align-items: center;
+  word-break: break-word;
+  z-index: 10;
+}
+
+.hero_headings h1 {
+  margin: 0 0 1.5rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* .hero_headings p {
+    margin: 0.6rem 0;
+    font-size: clamp(2rem, 50%, 3rem);
+    font-weight: normal;
+  } */
+
+.hero_headings p {
+  font-size: 1.125rem;
+  line-height: 1.6rem;
+  /* margin-bottom: 0; */
+  padding: 0px 0px;
+}
+
+.company_type {
+  font-size: 1.125rem;
+  line-height: 1.6rem;
+  /* margin-bottom: 0; */
+  /* padding: 0 5.8rem; */
+  margin: 0 0 1rem 0;
+}
+
+.location_date_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.location_date {
+  font-size: 1.125rem;
+  line-height: 1.6rem;
+  padding: 1rem 0px 0px 0px;
+  margin: 0;
+}
+
+/* .share_section_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.intrested_btn {
+  font-weight: bold;
+  color: var(--white);
+  background-color: #6875e2;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid #6875e2;
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.refer_btn {
+  font-weight: bold;
+  color: var(--white);
+  /* background-color: var(--lightblue); */
+  padding: 0.9rem 1.5rem;
+  border: 1px solid #ffff;
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.icons_list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.icons_list li {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_headings {
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .hero_headings h3 {
+    padding: 0 2rem;
+    line-height: 1.5;
+  }
+
+  .hero_headings p {
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+    /* margin-bottom: 0; */
+    padding: 0 2rem;
+    margin-bottom: 2.6rem;
+  }
+}

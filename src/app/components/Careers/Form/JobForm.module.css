@@ -1,0 +1,12 @@
+.form_wrapper {
+  width: 768px;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+}
+
+.from input {
+  display: block;
+}
