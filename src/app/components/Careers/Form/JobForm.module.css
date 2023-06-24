@@ -48,11 +48,17 @@
 }
 
 .first_name {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.first_name input {
+  flex-grow: 5;
+}
+
+.first_name select {
+  flex-grow: 0.5;
 }
 
 .form input {
