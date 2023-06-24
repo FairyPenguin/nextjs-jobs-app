@@ -7,7 +7,7 @@ const page = () => {
         <div>
             <h1>Form Page</h1>
 
-            <div className="container">
+            <div className={styles.container}>
                 <JobForm />
             </div>
         </div>

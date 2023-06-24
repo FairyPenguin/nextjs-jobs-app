@@ -1,12 +1,34 @@
 .form_wrapper {
-  width: 768px;
+  max-width: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid blueviolet;
+}
+
+.form {
+  max-width: 640px;
+}
+
+.form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+  border: none;
+  outline: none;
 }
 
 .legend {
   display: grid;
-  grid-template-columns: repeat(autofill, 1fr);
+  grid-template-columns: auto, 1fr;
+  border: none;
+  outline: none;
 }
 
-.from input {
-  display: block;
+.from fieldset label {
+  display: inline-block;
+  margin: 0 12rem 0 0;
 }
