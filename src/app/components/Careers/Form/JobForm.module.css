@@ -16,19 +16,17 @@
   margin-bottom: 1rem;
   padding: 0.5rem 0;
   display: grid;
-  grid-template-columns: repeat(autofill, 1fr);
+  grid-template-columns: repeat(auto-fill, 600px);
   border: none;
   outline: none;
 }
 
-.legend {
-  display: grid;
-  grid-template-columns: auto, 1fr;
-  border: none;
-  outline: none;
+.form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
-.from fieldset label {
-  display: inline-block;
-  margin: 0 12rem 0 0;
+.form input {
+  height: 2.2rem;
 }

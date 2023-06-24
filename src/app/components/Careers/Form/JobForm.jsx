@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 function JobForm() {
     return (
         <>
-            <div>JobForm</div>
+            {/* <div>JobForm</div> */}
             <div className={styles.form_wrapper}>
                 <form className={styles.form} action="">
 
