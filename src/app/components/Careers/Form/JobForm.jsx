@@ -14,13 +14,16 @@ function JobForm() {
                         <legend className={styles.legend}>Basic Info</legend>
                         <label htmlFor="">
                             First Name
-                            <select name="" id="">
-                                <option value="-None-">-None-</option>
-                                <option value="Mr.">Mr.</option>
-                                <option value="Mrs.">Mrs.</option>
-                                <option value="Ms">Ms</option>
-                            </select>
-                            <input type="text" required />
+                            <div className={styles.first_name} >
+                                <select name="" id="">
+                                    <option value="-None-">-None-</option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms">Ms</option>
+                                </select>
+                                <input type="text" required />
+                            </div>
+
                         </label>
 
                         <label htmlFor="">
