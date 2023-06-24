@@ -57,9 +57,9 @@
   flex-grow: 1;
 }
 
-.first_name select {
+/* .first_name select {
   flex-shrink: 2;
-}
+} */
 
 @media screen and (max-width: 350px) {
   .first_name input {

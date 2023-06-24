@@ -375,6 +375,23 @@ function JobForm() {
 
                     </fieldset>
 
+                    <fieldset>
+                        <legend>Attachment Information</legend>
+
+                        <label htmlFor="">
+                            Photo
+                            <input id="file" name="file" type="file" />
+                        </label>
+
+                        <label htmlFor="">
+                            Resume
+                            <input id="file" name="file" type="file" />
+                        </label>
+
+
+
+                    </fieldset>
+
                     {/* submit Button */}
 
                     <input type="submit" />
