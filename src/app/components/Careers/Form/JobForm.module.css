@@ -54,18 +54,23 @@
 }
 
 .first_name input {
-  flex-grow: 5;
+  flex-grow: 1;
 }
 
 .first_name select {
-  flex-grow: 0.5;
+  flex-shrink: 2;
+}
+
+@media screen and (max-width: 350px) {
+  .first_name input {
+    width: clamp(150px, 50%, 220px);
+  }
 }
 
 .form input {
   margin-top: 0.3rem;
   height: 2.2rem;
   padding: 18px 5px;
-  grid-column: 1;
   border-radius: 6px;
   border: 2px solid grey;
   text-indent: 7px;
