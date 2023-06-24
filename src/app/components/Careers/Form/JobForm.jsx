@@ -378,17 +378,17 @@ function JobForm() {
                     <fieldset>
                         <legend>Attachment Information</legend>
 
-                        <label htmlFor="">
-                            Photo
-                            <input id="file" name="file" type="file" />
-                        </label>
+                        <div className={styles.attachment}>
+                            <label htmlFor="">
+                                Photo
+                                <input id="file" name="file" type="file" />
+                            </label>
 
-                        <label htmlFor="">
-                            Resume
-                            <input id="file" name="file" type="file" />
-                        </label>
-
-
+                            <label htmlFor="">
+                                Resume
+                                <input id="file" name="file" type="file" />
+                            </label>
+                        </div>
 
                     </fieldset>
 

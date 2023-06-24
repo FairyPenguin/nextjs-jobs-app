@@ -87,3 +87,7 @@
   background-color: none;
   color: black;
 }
+
+.attachment input {
+  border: 2px dashed grey;
+}
