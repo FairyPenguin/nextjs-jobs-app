@@ -54,7 +54,7 @@ function JobForm() {
                         </label>
 
                         <label htmlFor="">
-                            city
+                            City
                             <input type="text" />
                         </label>
 
