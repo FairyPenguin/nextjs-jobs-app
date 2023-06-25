@@ -9,6 +9,115 @@ import {
 } from 'react-icons/fa6';
 
 
+const jobs = [
+    {
+        id: 1,
+        type: "Freelance",
+        position: "Free lancer legal translator",
+        location: "Remote Job",
+        category: "Legal",
+    },
+    {
+        id: 2,
+        type: "Full-time",
+        position: "Software Developer",
+        location: "San Francisco, CA",
+        category: "Software",
+    },
+    {
+        id: 3,
+        type: "Part-time",
+        position: "Marketing Specialist",
+        location: "New York City, NY",
+        category: "Marketing",
+    },
+    {
+        id: 4,
+        type: "Full-time",
+        position: "Sales Representative",
+        location: "Los Angeles, CA",
+        category: "Sales",
+    },
+    {
+        id: 5,
+        type: "Part-time",
+        position: "HR Coordinator",
+        location: "Chicago, IL",
+        category: "Hr",
+    },
+    {
+        id: 6,
+        type: "Freelance",
+        position: "Free lancer legal translator",
+        location: "Remote Job",
+        category: "Legal",
+    },
+    {
+        id: 7,
+        type: "Full-time",
+        position: "Software Developer",
+        location: "San Francisco, CA",
+        category: "Software",
+    },
+    {
+        id: 8,
+        type: "Part-time",
+        position: "Marketing Specialist",
+        location: "New York City, NY",
+        category: "Marketing",
+    },
+    {
+        id: 9,
+        type: "Full-time",
+        position: "Sales Representative",
+        location: "Los Angeles, CA",
+        category: "Sales",
+    },
+    {
+        id: 10,
+        type: "Part-time",
+        position: "HR Coordinator",
+        location: "Chicago, IL",
+        category: "Hr",
+    },
+    {
+        id: 11,
+        type: "Freelance",
+        position: "Free lancer legal translator",
+        location: "Remote Job",
+        category: "Legal",
+    },
+    {
+        id: 12,
+        type: "Full-time",
+        position: "Software Developer",
+        location: "San Francisco, CA",
+        category: "Software",
+    },
+    {
+        id: 13,
+        type: "Part-time",
+        position: "Marketing Specialist",
+        location: "New York City, NY",
+        category: "Marketing",
+    },
+    {
+        id: 14,
+        type: "Full-time",
+        position: "Sales Representative",
+        location: "Los Angeles, CA",
+        category: "Sales",
+    },
+    {
+        id: 15,
+        type: "Part-time",
+        position: "HR Coordinator",
+        location: "Chicago, IL",
+        category: "Hr",
+    },
+];
+
+
 
 function JobPageDescription() {
     return (
@@ -56,7 +165,8 @@ function JobPageDescription() {
                     </article>
 
                     <div className={styles.btn_wrapper}>
-                        <Link className={styles.intrested_btn_lg} href="#jobs">I'm intrested</Link>
+                        <Link className={styles.intrested_btn_lg}
+                            href={""}>I'm intrested</Link>
                     </div>
 
                 </div>
