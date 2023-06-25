@@ -361,7 +361,7 @@ function JobForm() {
                     </fieldset> */}
 
                     <fieldset>
-                        <legend>Social Network</legend>
+                        <legend>Links</legend>
 
                         <label htmlFor="">
                             LinkedIn
@@ -401,7 +401,7 @@ function JobForm() {
                             </label>
 
                             <label htmlFor="">
-                                Resume
+                                Resume/CV
                                 <input {...register("resume", { required: true })} className={styles.resume} id="file" name="file" type="file" />
                             </label>
                         </div>
