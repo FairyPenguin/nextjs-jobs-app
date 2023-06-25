@@ -39,17 +39,17 @@ function JobForm() {
 
                         <label htmlFor="">
                             Last Name
-                            <input type="text" required />
+                            <input className={styles.last_name} type="text" required />
                         </label>
 
                         <label htmlFor="">
                             Email
-                            <input type="email" required />
+                            <input className={styles.email} type="email" required />
                         </label>
 
                         <label htmlFor="">
                             Mobile
-                            <input type="number" />
+                            <input className={styles.mobile} type="number" />
                         </label>
                     </fieldset>
 
@@ -59,22 +59,22 @@ function JobForm() {
 
                         <label htmlFor="">
                             Street
-                            <input type="text" />
+                            <input className={styles.street} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Zip/Postal Code
-                            <input type="number" />
+                            <input className={styles.postal_code} type="number" />
                         </label>
 
                         <label htmlFor="">
                             City
-                            <input type="text" />
+                            <input className={styles.city} type="text" />
                         </label>
 
                         <label htmlFor="">
                             State/Province
-                            <input type="text" />
+                            <input className={styles.state} type="text" />
                         </label>
 
                         <label htmlFor="">
@@ -360,27 +360,27 @@ function JobForm() {
 
                         <label htmlFor="">
                             LinkedIn
-                            <input type="text" />
+                            <input className={styles.linkedin} type="text" />
                         </label>
 
                         <label htmlFor="">
                             GitHUb
-                            <input type="text" />
+                            <input className={styles.github} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Behance
-                            <input type="text" />
+                            <input className={styles.behance} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Portofolio/Personal Website
-                            <input type="text" />
+                            <input className={styles.portoflio} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Other...
-                            <input type="text" />
+                            <input className={styles.other} type="text" />
                         </label>
 
 
@@ -392,12 +392,12 @@ function JobForm() {
                         <div className={styles.attachment}>
                             <label htmlFor="">
                                 Photo
-                                <input id="file" name="file" type="file" />
+                                <input className={styles.photo} id="file" name="file" type="file" />
                             </label>
 
                             <label htmlFor="">
                                 Resume
-                                <input id="file" name="file" type="file" />
+                                <input className={styles.resume} id="file" name="file" type="file" />
                             </label>
                         </div>
 
