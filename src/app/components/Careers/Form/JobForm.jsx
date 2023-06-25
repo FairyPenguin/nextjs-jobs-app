@@ -23,7 +23,7 @@ function JobForm() {
                         <legend className={styles.legend}>Basic Info</legend>
                         <label htmlFor="first-name">
                             First Name
-                            <div className={styles.first_name} >
+                            <div className={styles.first_name_wrapper} >
                                 {/* <label htmlFor="title"></label> */}
                                 <select value={select} onChange={selectHandler} required name="title" id="title">
                                     <option value="None">None</option>
@@ -31,7 +31,7 @@ function JobForm() {
                                     <option value="Ms.">Ms.</option>
                                     <option value="Mrs.">Mrs.</option>
                                 </select>
-                                <input id='first-name' type="text" required />
+                                <input className={styles.first_name} id='first-name' type="text" required />
 
                             </div>
 

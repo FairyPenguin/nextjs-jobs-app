@@ -48,13 +48,13 @@
   margin-bottom: 1rem;
 }
 
-.first_name {
+.first_name_wrapper {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.first_name input {
+.first_name_wrapper input {
   flex-grow: 1;
 }
 
@@ -63,7 +63,7 @@
 } */
 
 @media screen and (max-width: 350px) {
-  .first_name input {
+  .first_name_wrapper input {
     width: clamp(150px, 50%, 220px);
   }
 }
@@ -71,17 +71,16 @@
 .form input {
   margin-top: 0.3rem;
   height: 2.4rem;
-  padding: 8px 5px;
   border-radius: 6px;
   font-size: 1rem;
 }
 
-.form,
 .first_name,
 .last_name,
 .email,
 .mobile,
 .street,
+.postal_code,
 .city,
 .state,
 .linkedin,
@@ -91,6 +90,11 @@
 .other {
   text-indent: 7px;
   border: 2px solid grey;
+  padding: 8px 5px;
+}
+
+.form .photo .resume {
+  padding: 8px 5px;
 }
 
 .form select {
