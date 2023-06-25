@@ -29,13 +29,13 @@ function JobForm() {
                             First Name
                             <div className={styles.first_name_wrapper} >
                                 {/* <label htmlFor="title"></label> */}
-                                <select {...register("title"), { required: true }} value={select} onChange={selectHandler} required name="title" id="title">
+                                <select {...register("title", { required: true })} value={select} onChange={selectHandler} id="title">
                                     <option value="None">None</option>
                                     <option value="Mr.">Mr.</option>
                                     <option value="Ms.">Ms.</option>
                                     <option value="Mrs.">Mrs.</option>
                                 </select>
-                                <input {...register("firstName"), { required: true }} className={styles.first_name} id='first-name' type="text" required />
+                                <input {...register("firstName", { required: true })} className={styles.first_name} id='first-name' type="text" required />
 
                             </div>
 
@@ -43,17 +43,17 @@ function JobForm() {
 
                         <label htmlFor="">
                             Last Name
-                            <input {...register("lastName"), { required: true }} className={styles.last_name} type="text" required />
+                            <input {...register("lastName", { required: true })} className={styles.last_name} type="text" required />
                         </label>
 
                         <label htmlFor="">
                             Email
-                            <input {...register("email"), { required: true }} className={styles.email} type="email" required />
+                            <input {...register("email", { required: true })} className={styles.email} type="email" required />
                         </label>
 
                         <label htmlFor="">
                             Mobile
-                            <input {...register("mobile"), { required: true }} className={styles.mobile} type="number" />
+                            <input {...register("mobile", { required: true })} className={styles.mobile} type="number" />
                         </label>
                     </fieldset>
 
@@ -78,14 +78,15 @@ function JobForm() {
 
                         <label htmlFor="">
                             State/Province
-                            <input {...register("state"), { required: true }} className={styles.state} type="text" />
+                            <input {...register("state", { required: true })} className={styles.state} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Country
 
-                            <select {...register("country"), { required: true }} name="" id="">
-                                <option value="0" label="Select a country ... " defaultValue>Select a country ... </option>
+                            <select {...register("country", { required: true }, { defaultValue: "Select a country ..." })}
+                                name="" id="">
+                                <option value="0" label="Select a country ... ">Select a country ... </option>
                                 <optgroup id="country-optgroup-Africa" label="Africa">
                                     <option value="DZ" label="Algeria">Algeria</option>
                                     <option value="AO" label="Angola">Angola</option>
@@ -364,7 +365,7 @@ function JobForm() {
 
                         <label htmlFor="">
                             LinkedIn
-                            <input {...register("linkedin"), { required: true }} className={styles.linkedin} type="text" />
+                            <input {...register("linkedin", { required: true })} className={styles.linkedin} type="text" />
                         </label>
 
                         <label htmlFor="">
@@ -401,7 +402,7 @@ function JobForm() {
 
                             <label htmlFor="">
                                 Resume
-                                <input {...register("resume"), { required: true }} className={styles.resume} id="file" name="file" type="file" />
+                                <input {...register("resume", { required: true })} className={styles.resume} id="file" name="file" type="file" />
                             </label>
                         </div>
 
