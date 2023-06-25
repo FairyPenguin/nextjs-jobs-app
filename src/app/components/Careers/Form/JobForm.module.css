@@ -10,6 +10,7 @@
 .form {
   max-width: 640px;
   padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .form fieldset {
@@ -94,4 +95,19 @@
   width: 280px;
   height: 2.7rem;
   text-align: center;
+}
+
+.submit_btn {
+  outline: none;
+  border-color: #6875e2;
+  background-color: #6875e2;
+  color: white;
+  /* padding: 2rem 2rem; */
+  width: 175px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 16px;
+  text-align: center;
+  cursor: pointer;
 }

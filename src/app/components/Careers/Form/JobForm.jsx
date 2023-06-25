@@ -405,7 +405,7 @@ function JobForm() {
 
                     {/* submit Button */}
 
-                    <input type="submit" />
+                    <input className={styles.submit_btn} type="submit" value="Submit Application" />
 
                     <button>Cancel</button>
                 </form>
