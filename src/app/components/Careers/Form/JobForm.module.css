@@ -69,10 +69,7 @@
 }
 
 .form input {
-  margin-top: 0.3rem;
-  height: 2.4rem;
   border-radius: 6px;
-  font-size: 1rem;
 }
 
 .first_name,
@@ -88,13 +85,13 @@
 .behance,
 .portoflio,
 .other {
-  text-indent: 7px;
+  margin-top: 0.3rem;
+
+  text-indent: 10px;
   border: 2px solid grey;
   padding: 8px 5px;
-}
-
-.form .photo .resume {
-  padding: 8px 5px;
+  height: 2.4rem;
+  font-size: 1rem;
 }
 
 .form select {
@@ -106,11 +103,21 @@
   font-size: 1rem;
 }
 
-.attachment input {
+.photo,
+.resume {
+  margin-top: 0.3rem;
+
+  padding: 8px 5px;
   border: 2px dashed grey;
   width: 280px;
-  height: 2.7rem;
-  text-align: center;
+  height: 2.6rem;
+  font-size: 1rem;
+}
+
+.buttons_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .submit_btn {
@@ -119,11 +126,28 @@
   border: none;
   color: white;
   /* padding: 2rem 2rem; */
-  width: 180px;
+  width: 190px;
   margin-right: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 10px;
   text-align: center;
   cursor: pointer;
+}
+
+.cancel_btn {
+  outline: none;
+  background-color: #6875e2;
+  border: none;
+  color: white;
+  /* padding: 2rem 2rem; */
+  width: 95px;
+  height: 42px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
 }

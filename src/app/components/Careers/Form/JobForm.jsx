@@ -403,11 +403,18 @@ function JobForm() {
 
                     </fieldset>
 
-                    {/* submit Button */}
+                    {/* Buttons */}
 
-                    <input className={styles.submit_btn} type="submit" value="Submit Application" />
+                    <div className={styles.buttons_wrapper}>
 
-                    <button>Cancel</button>
+                        <button className={styles.cancel_btn}>Cancel</button>
+
+                        <input className={styles.submit_btn} type="submit" value="Submit Application" />
+
+
+                    </div>
+
+
                 </form>
             </div >
 
