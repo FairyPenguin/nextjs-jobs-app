@@ -85,8 +85,8 @@ function JobForm() {
                             Country
 
                             <select {...register("country", { required: true }, { defaultValue: "Select a country ..." })}
-                                name="" id="">
-                                <option value="0" label="Select a country ... ">Select a country ... </option>
+                                id="">
+                                <option value="0" label="Select a country ... ">Select a country ...</option>
                                 <optgroup id="country-optgroup-Africa" label="Africa">
                                     <option value="DZ" label="Algeria">Algeria</option>
                                     <option value="AO" label="Angola">Angola</option>
