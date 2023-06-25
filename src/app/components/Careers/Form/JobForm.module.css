@@ -1,11 +1,11 @@
-/* .form_wrapper {
+.form_wrapper {
   max-width: 768px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem;
-  border: 1px solid blueviolet;
-} */
+  padding: 0.5rem 0rem;
+  border: none;
+}
 
 .form {
   max-width: 640px;
@@ -144,7 +144,17 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 440px) {
+  .form {
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .photo,
+  .resume {
+    width: 275px;
+  }
+
   .first_name_wrapper input {
     width: clamp(150px, 50%, 200px);
   }
@@ -152,9 +162,9 @@
   .form fieldset {
     border: none;
     margin-bottom: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     display: grid;
-    grid-template-columns: minmax(auto, 280px);
+    grid-template-columns: minmax(275px, auto);
     border: none;
     outline: none;
   }
