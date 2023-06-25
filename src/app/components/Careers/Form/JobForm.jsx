@@ -2,10 +2,14 @@
 
 import React, { useState } from 'react'
 import styles from "./JobForm.module.css"
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"
 
 
 function JobForm() {
+
+    const { register, handleSubmit } = useForm()
+
+    const onSubmit = (data) => console.log(data)
 
     const [select, setSelect] = useState("None")
 
@@ -17,7 +21,7 @@ function JobForm() {
         <>
             {/* <div>JobForm</div> */}
             <div className={styles.form_wrapper}>
-                <form className={styles.form} action="">
+                <form className={styles.form} onSubmit={handleSubmit(onSubmit)} >
 
                     <fieldset>
                         <legend className={styles.legend}>Basic Info</legend>
@@ -25,13 +29,13 @@ function JobForm() {
                             First Name
                             <div className={styles.first_name_wrapper} >
                                 {/* <label htmlFor="title"></label> */}
-                                <select value={select} onChange={selectHandler} required name="title" id="title">
+                                <select {...register("title"), { required: true }} value={select} onChange={selectHandler} required name="title" id="title">
                                     <option value="None">None</option>
                                     <option value="Mr.">Mr.</option>
                                     <option value="Ms.">Ms.</option>
                                     <option value="Mrs.">Mrs.</option>
                                 </select>
-                                <input className={styles.first_name} id='first-name' type="text" required />
+                                <input {...register("firstName"), { required: true }} className={styles.first_name} id='first-name' type="text" required />
 
                             </div>
 
@@ -39,17 +43,17 @@ function JobForm() {
 
                         <label htmlFor="">
                             Last Name
-                            <input className={styles.last_name} type="text" required />
+                            <input {...register("lastName"), { required: true }} className={styles.last_name} type="text" required />
                         </label>
 
                         <label htmlFor="">
                             Email
-                            <input className={styles.email} type="email" required />
+                            <input {...register("email"), { required: true }} className={styles.email} type="email" required />
                         </label>
 
                         <label htmlFor="">
                             Mobile
-                            <input className={styles.mobile} type="number" />
+                            <input {...register("mobile"), { required: true }} className={styles.mobile} type="number" />
                         </label>
                     </fieldset>
 
@@ -59,28 +63,28 @@ function JobForm() {
 
                         <label htmlFor="">
                             Street
-                            <input className={styles.street} type="text" />
+                            <input {...register("street")} className={styles.street} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Zip/Postal Code
-                            <input className={styles.postal_code} type="number" />
+                            <input {...register("postalCode")} className={styles.postal_code} type="number" />
                         </label>
 
                         <label htmlFor="">
                             City
-                            <input className={styles.city} type="text" />
+                            <input {...register("city")} className={styles.city} type="text" />
                         </label>
 
                         <label htmlFor="">
                             State/Province
-                            <input className={styles.state} type="text" />
+                            <input {...register("state"), { required: true }} className={styles.state} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Country
 
-                            <select name="" id="">
+                            <select {...register("country"), { required: true }} name="" id="">
                                 <option value="0" label="Select a country ... " defaultValue>Select a country ... </option>
                                 <optgroup id="country-optgroup-Africa" label="Africa">
                                     <option value="DZ" label="Algeria">Algeria</option>
@@ -350,37 +354,37 @@ function JobForm() {
 
                     </fieldset>
 
-                    <fieldset>
+                    {/* <fieldset>
                         <legend>Professional Details</legend>
 
-                    </fieldset>
+                    </fieldset> */}
 
                     <fieldset>
                         <legend>Social Network</legend>
 
                         <label htmlFor="">
                             LinkedIn
-                            <input className={styles.linkedin} type="text" />
+                            <input {...register("linkedin"), { required: true }} className={styles.linkedin} type="text" />
                         </label>
 
                         <label htmlFor="">
                             GitHUb
-                            <input className={styles.github} type="text" />
+                            <input {...register("github")} className={styles.github} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Behance
-                            <input className={styles.behance} type="text" />
+                            <input {...register("behance")} className={styles.behance} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Portofolio/Personal Website
-                            <input className={styles.portoflio} type="text" />
+                            <input {...register("portofolio")} className={styles.portoflio} type="text" />
                         </label>
 
                         <label htmlFor="">
                             Other...
-                            <input className={styles.other} type="text" />
+                            <input {...register("other")} className={styles.other} type="text" />
                         </label>
 
 
@@ -392,12 +396,12 @@ function JobForm() {
                         <div className={styles.attachment}>
                             <label htmlFor="">
                                 Photo
-                                <input className={styles.photo} id="file" name="file" type="file" />
+                                <input {...register("photo")} className={styles.photo} id="file" name="file" type="file" />
                             </label>
 
                             <label htmlFor="">
                                 Resume
-                                <input className={styles.resume} id="file" name="file" type="file" />
+                                <input {...register("resume"), { required: true }} className={styles.resume} id="file" name="file" type="file" />
                             </label>
                         </div>
 
