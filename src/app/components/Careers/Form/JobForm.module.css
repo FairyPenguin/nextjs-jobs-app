@@ -108,7 +108,7 @@
   color: white;
   /* padding: 2rem 2rem; */
   width: 190px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 10px;
@@ -144,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 380px) {
   .first_name_wrapper input {
     width: clamp(150px, 50%, 200px);
   }
@@ -154,7 +154,7 @@
     margin-bottom: 1rem;
     padding: 0.5rem 2rem;
     display: grid;
-    grid-template-columns: minmax(auto, 285px);
+    grid-template-columns: minmax(auto, 280px);
     border: none;
     outline: none;
   }
