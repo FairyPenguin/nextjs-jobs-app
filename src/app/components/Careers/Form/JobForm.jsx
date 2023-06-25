@@ -1,9 +1,18 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import styles from "./JobForm.module.css"
 import { useForm } from "react-hook-form";
 
 
 function JobForm() {
+
+    const [select, setSelect] = useState("None")
+
+    function selectHandler(event) {
+        console.log(event.target.value);
+        setSelect(event.target.value)
+    }
     return (
         <>
             {/* <div>JobForm</div> */}
@@ -12,16 +21,18 @@ function JobForm() {
 
                     <fieldset>
                         <legend className={styles.legend}>Basic Info</legend>
-                        <label htmlFor="">
+                        <label htmlFor="first-name">
                             First Name
                             <div className={styles.first_name} >
-                                <select name="" id="">
-                                    <option value="-None-">-None-</option>
+                                {/* <label htmlFor="title"></label> */}
+                                <select value={select} onChange={selectHandler} required name="title" id="title">
+                                    <option value="None">None</option>
                                     <option value="Mr.">Mr.</option>
+                                    <option value="Ms.">Ms.</option>
                                     <option value="Mrs.">Mrs.</option>
-                                    <option value="Ms">Ms</option>
                                 </select>
-                                <input type="text" required />
+                                <input id='first-name' type="text" required />
+
                             </div>
 
                         </label>
